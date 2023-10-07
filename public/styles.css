@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+3:wght@200;300;400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    * {
+        @apply m-0 p-0 box-border
+    }
+
+    :root {
+        --color-background: 232 243 243;
+        --color-text: 13 27 42;
+        --color-main-bg: 242 248 247;
+        --color-heading: 34 34 34;
+        --color-paragraph:85 85 85;
+        --color-green: 0 170 161
+    }
+
+    :root[class="dark"] {
+        --color-background: 0 0 0;
+        --color-text: 248 249 250;
+        --color-main-bg: 11 9 10;
+        --color-heading: 226 234 252;
+        --color-paragraph: 255 255 255
+    }
+
+    :root[class="light"] {
+        --color-background: 232 243 243;
+        --color-text: 13 27 42;
+        --color-main-bg: 242 248 247;
+        --color-heading: 34 34 34;
+        --color-paragraph:85 85 85;
+    }
+    .container{
+        @apply mx-auto w-[1440px]
+    }
+}
